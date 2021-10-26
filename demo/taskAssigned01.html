@@ -3,16 +3,15 @@
 
 <head>
 	<title>Task Assigned</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+	<!-- view port -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- view port end -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<style>
+	<style type="text/css">
 		body,
 		html {
 			margin: 0;
@@ -44,7 +43,7 @@
 			/* position: absolute; */
 			position: relative;
 			height: 170px;
-			width: 170px;
+			/* width: 170px; */
 			top: -20px;
 			/* border-radius: 50%; */
 			/* background: #f5f5f5; */
@@ -94,33 +93,233 @@
 		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 			background-color: #c0392b !important;
 		}
+
+		/* new styles  from forget passw*/
+		/* FONTS */
+		@media screen {
+			@font-face {
+				font-family: 'Lato';
+				font-style: normal;
+				font-weight: 400;
+				src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+			}
+
+			@font-face {
+				font-family: 'Lato';
+				font-style: normal;
+				font-weight: 700;
+				src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+			}
+
+			@font-face {
+				font-family: 'Lato';
+				font-style: italic;
+				font-weight: 400;
+				src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+			}
+
+			@font-face {
+				font-family: 'Lato';
+				font-style: italic;
+				font-weight: 700;
+				src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+			}
+		}
+
+		/* CLIENT-SPECIFIC STYLES */
+		body,
+		table,
+		td,
+		a {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		/* RESET STYLES */
+		img {
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		table {
+			border-collapse: collapse !important;
+		}
+
+		body {
+			height: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+		}
+
+		/* iOS BLUE LINKS */
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* ANDROID CENTER FIX */
+		div[style*="margin: 16px 0;"] {
+			margin: 0 !important;
+		}
 	</style>
 </head>
 
-<body>
-	<div class="container h-100">
+<body style="
+    /* margin-top: 100px !important; */
+">
+	<!-- <div class="container h-100">
 
 		<div class="d-flex justify-content-center h-100">
-			<div class="user_card">
-				<div class="d-flex justify-content-center mt-2">
-					<div class="brand_logo_container">
-						<img src="https://www.svgrepo.com/show/189321/tasks-tick.svg" class="brand_logo" alt="Logo">
-					</div>
-				</div>
-				<h4 style='color: #2a2a2a; font-family: "Asap", Helvetica,
-				sans-serif; font-size: 30px; font-style: normal; font-weight: bold; line-height:
-				125%; letter-spacing: 2px; text-align: center; display: block; margin: 0;
-				padding: 0'>A Task has been Assigned. </h4>
-				<div class="d-flex justify-content-center form_container">
-
-					<div class="d-flex justify-content-center mt-3 login_container">
-						<button type="button" name="button" class="btn login_btn pr-5 pl-5">Task Link</button>
-					</div>
-				</div>
-
-			</div>
+		
 		</div>
-	</div>
+	</div> -->
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" style="
+    /* margin-top: 50px; */
+    padding-top: 200px;
+    /* top: 100px; */
+">
+
+		<!-- LOGO -->
+		<tbody>
+			<!-- LOGO -->
+
+			<!-- HERO -->
+			<tr style="
+    /* margin-top: 50px; */
+">
+				<td bgcolor="" align="center" style="padding: 0px 10px 0px 10px;">
+					
+					<table border="0" cellpadding="0" cellspacing="0" width="480">
+						<tbody>
+							<tr>
+								<td bgcolor="" align="center" valign="top" style="padding: 200px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+
+									<div class="">
+
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tbody style="
+    /* height: 400px; */
+    /* width: 350px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #ffff;
+    position: relative;
+    /* display: contents; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border-left: 4px solid #69c5a5;
+    flex-wrap: wrap;
+    align-content: center;
+">
+							<tr>
+								<td bgcolor="#ffffff" align="center" style="padding: 50px 0px 0px 0px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td align="center" style="border-radius: 3px;" bgcolor="">
+													<div class="d-flex justify-content-center mt-2">
+														<div class="brand_logo_container">
+															<img src="https://www.svgrepo.com/show/189321/tasks-tick.svg" class="brand_logo" alt="Logo">
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#ffffff" align="center" style="padding: 10px 30px 20px 30px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td align="center" style="border-radius: 3px;" bgcolor="">
+													<h4 style="color: #2a2a2a; font-family: &quot;Asap&quot;, Helvetica,
+											sans-serif; font-size: 30px; font-style: normal; font-weight: bold; line-height:
+											125%; letter-spacing: 2px; text-align: center; display: block; margin: 0;
+											padding: 0">A Task has been Assigned. </h4>
+													</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td align="center" style="border-radius: 3px;" bgcolor="#69c5a5"><a href="https://litmus.com" target="_blank" style="font-size: 20px;font-family: Helvetica, Arial, sans-serif;color: #ffffff;text-decoration: none;color: #ffffff;text-decoration: none;padding: 15px 100px;border-radius: 2px;border: 1px solid #69c5a5;display: inline-block;">Task
+														Link</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+						<!-- <div class="d-flex justify-content-center mt-2">
+											<div class="brand_logo_container">
+												<img src="https://www.svgrepo.com/show/189321/tasks-tick.svg"
+													class="brand_logo" alt="Logo">
+											</div>
+										</div> -->
+
+
+						<!-- <h4 style="color: #2a2a2a; font-family: &quot;Asap&quot;, Helvetica,
+											sans-serif; font-size: 30px; font-style: normal; font-weight: bold; line-height:
+											125%; letter-spacing: 2px; text-align: center; display: block; margin: 0;
+											padding: 0">A Task has been Assigned. </h4> -->
+						<!-- <div class="d-flex justify-content-center form_container">
+
+											<div class="d-flex justify-content-center mt-3 login_container">
+												<button type="button" name="button" class="btn login_btn pr-5 pl-5">Task
+													Link</button>
+											</div>
+										</div> -->
+
+
+
+
+
+					</table>
+				</td>
+			</tr>
+
+
+		</tbody>
+	</table>
+
+
+
+
 
 
 </body>
